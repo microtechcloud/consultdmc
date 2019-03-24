@@ -29,7 +29,7 @@
   "private": false,
   "scripts": {
     "tests": "mocha",
-    "start": "export NODE_ENV=production && node ./www",
+    "start": "export NODE_ENV=production && pm2 start ./www/index.js",
     "dev": "export NODE_ENV=development && nodemon ./www"
   },
   "devDependencies": {
